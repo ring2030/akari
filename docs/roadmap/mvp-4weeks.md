@@ -57,13 +57,14 @@
 
 **ゴール：「きもち」と「moments」が、ローカル開発環境で本当に動く。**
 
-- [ ] 入居者タブレット：mood 4 択画面（大きなタップ領域、フォーカス順序）
-- [ ] mood の保存 API（スキーマ検証、レートリミット）
-- [ ] 介護士スマホ：moments 入力フォーム（30 秒で完了する設計）
-- [ ] moments の保存 API
+- [x] 入居者タブレット：mood 4 択画面（大きなタップ領域、フォーカス順序）
+- [x] mood の保存 API（`@akari/core` 検証 + Server Action + デモモード）
+- [x] 介護士スマホ：moments 入力フォーム（30 秒で完了する設計）
+- [x] moments の保存 API（家族共有可 + 監査ログ）
 - [ ] PII スクラブを通したロガー（ring-core から移植）
-- [ ] 監査ログの最小実装（mood 投稿・moments 投稿）
-- [ ] vitest による純粋関数テスト（mood 集計、時刻整形）
+- [x] 監査ログの最小実装（mood 投稿・moments 投稿）
+- [x] vitest による純粋関数テスト（mood / moment バリデーション）
+- [x] `supabase/seed.sql` デモデータ
 
 **完了の確認方法：** 開発機で resident → mood 送信 → caregiver でその直後の moments が一覧に出る。手動の操作時間が **30 秒以内**。
 

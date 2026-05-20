@@ -76,7 +76,12 @@ npm install
 npm run lint
 npm run test:run
 npm run build          # @akari/core をビルド
-npm run dev            # @akari/web（Week 1 以降）
+npm run dev            # @akari/web
+
+# ローカル DB（Docker + Supabase CLI）
+supabase start && supabase db reset
+cp apps/web/.env.local.example apps/web/.env.local
+# → AKARI_DEMO_MODE=true と service_role key を設定
 ```
 
 詳しい開発フローは [`CONTRIBUTING.md`](./CONTRIBUTING.md) を参照してください。

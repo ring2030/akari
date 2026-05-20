@@ -26,8 +26,20 @@ supabase start
 
 ```bash
 cp apps/web/.env.local.example apps/web/.env.local
+# supabase start の anon / service_role を貼る
+# AKARI_DEMO_MODE=true でローカル保存が有効
+
+supabase db reset   # マイグレーション + seed.sql
 npm run dev
 ```
+
+デモアカウント（seed 適用後）:
+
+| メール | パスワード | ロール |
+|---|---|---|
+| `caregiver@demo.akari.local` | `demo-akari-2026` | 介護士 |
+| `resident@demo.akari.local` | `demo-akari-2026` | 入居者（やすこ） |
+| `family@demo.akari.local` | `demo-akari-2026` | 家族 |
 
 - アプリ: http://localhost:3000
 - Supabase Studio: http://localhost:54323

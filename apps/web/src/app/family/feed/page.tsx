@@ -1,12 +1,16 @@
-export default function FamilyFeedPage() {
+import { DemoBanner } from "@/components/DemoBanner";
+import { MomentFeed } from "@/components/MomentFeed";
+import { fetchFamilyFeed } from "@/lib/queries/moments";
+
+export default async function FamilyFeedPage() {
+  const { items, error } = await fetchFamilyFeed();
+
   return (
     <main>
-      <h1>出来事のフィード</h1>
-      <p className="muted">ご家族に共有された、小さな出来事がここに並びます。</p>
-      <div className="placeholder-card">
-        <p>まだ出来事はありません。</p>
-        <p className="muted">Week 3 で Supabase から読み込みます。</p>
-      </div>
+      <DemoBanner />
+      <h1>????????</h1>
+      <p className="muted">?????????????????????????</p>
+      <MomentFeed items={items} {...(error ? { error } : {})} />
     </main>
   );
 }

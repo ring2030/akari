@@ -25,7 +25,7 @@ export async function createClient() {
             cookieStore.set(name, value, options);
           }
         } catch {
-          // Server Component からの set は無視（middleware が担当）
+          // Server Component からの set は無視！Eiddleware が担当！E
         }
       },
     },
