@@ -1,0 +1,25 @@
+{
+  "name": "@akari/core",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "akari domain model, validation, and shared types",
+  "license": "Apache-2.0",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:run": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

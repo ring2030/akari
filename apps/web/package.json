@@ -1,0 +1,13 @@
+{
+  "name": "@akari/web",
+  "version": "0.0.1",
+  "private": true,
+  "description": "akari web app (Next.js + Supabase) — scaffold pending Week 1",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "echo \"@akari/web: Next.js scaffold arrives in Week 1 (see docs/roadmap/mvp-4weeks.md)\" && exit 0"
+  },
+  "dependencies": {
+    "@akari/core": "*"
+  }
+}
