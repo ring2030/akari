@@ -1,0 +1,32 @@
+{
+  "name": "akari",
+  "version": "0.0.1",
+  "private": true,
+  "description": "高齢者施設で暮らす方の毎日を、もう少しだけあたたかく、もう少しだけ自由にするためのオープンソース・ソフトウェア。ring-core の sibling project。",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "lint": "echo \"(lint placeholder) tooling will be added in the next PR.\" && exit 0",
+    "test:run": "echo \"(test placeholder) vitest will be added in the next PR.\" && exit 0",
+    "dev": "echo \"(dev placeholder) app scaffold will be added in the next PR.\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ring2030/akari.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ring2030/akari/issues"
+  },
+  "homepage": "https://github.com/ring2030/akari#readme",
+  "keywords": [
+    "eldercare",
+    "facility",
+    "dignity",
+    "open-source",
+    "japanese",
+    "akari"
+  ]
+}
