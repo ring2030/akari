@@ -5,13 +5,22 @@
   "description": "高齢者施設で暮らす方の毎日を、もう少しだけあたたかく、もう少しだけ自由にするためのオープンソース・ソフトウェア。ring-core の sibling project。",
   "license": "Apache-2.0",
   "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "engines": {
     "node": ">=22"
   },
   "scripts": {
-    "lint": "echo \"(lint placeholder) tooling will be added in the next PR.\" && exit 0",
-    "test:run": "echo \"(test placeholder) vitest will be added in the next PR.\" && exit 0",
-    "dev": "echo \"(dev placeholder) app scaffold will be added in the next PR.\" && exit 0"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "build": "npm run build -w @akari/core",
+    "dev": "npm run dev -w @akari/web"
   },
   "repository": {
     "type": "git",
@@ -28,5 +37,14 @@
     "open-source",
     "japanese",
     "akari"
-  ]
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.1",
+    "vitest": "^3.2.1"
+  }
 }

@@ -27,5 +27,8 @@ jobs:
       - name: Lint
         run: npm run lint --if-present
 
+      - name: Build @akari/core
+        run: npm run build -w @akari/core
+
       - name: Test
-        run: npm run test:run --if-present
+        run: npm run test:run
