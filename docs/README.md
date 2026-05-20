@@ -8,7 +8,9 @@
 docs/
 ├── README.md            ← このファイル
 ├── spec/                ← 製品の「契約」を定める仕様文書
-│   └── akari-protocol-1.0.md
+│   ├── akari-protocol-1.0.md
+│   ├── data-model.md
+│   └── deployment.md
 ├── decisions/           ← Architecture Decision Records (ADR)
 │   ├── 0000-record-architecture-decisions.md
 │   └── 0001-tech-stack.md

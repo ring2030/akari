@@ -106,8 +106,10 @@
 
 ## 決め切るためにやること（Week 1）
 
-- [ ] `supabase start` で MVP 用 schema の draft を作る（`resident`, `mood`, `moment`, `invite`, `audit_event`）
-- [ ] RLS ポリシーの「家族は自家族のみ可視」を Postgres レベルで書き、SQL テストで通す
-- [ ] self-hosted 構成のデプロイ手順を `docs/spec/deployment.md` に置く（草案）
-- [ ] 開発機（Windows / macOS / Linux）で `supabase start` が落ちないことを 2 名で確認
-- [ ] 上記 4 つを確認できたら、本 ADR を **Accepted** に書き換える PR を出す
+- [x] MVP 用 schema の draft を作る（`supabase/migrations/` — resident, mood, moment, invite, audit_event）
+- [x] RLS ポリシーの草案（家族は紐づく入居者の `family_shareable` のみ）— `20260520100001_rls_policies.sql`
+- [ ] RLS を pgTAP / `supabase test db` で自動検証（`supabase/tests/` は骨格のみ）
+- [x] デプロイ手順の草案 — `docs/spec/deployment.md`
+- [x] Next.js 14 スキャフォールド — `apps/web`
+- [ ] 開発機で `supabase start` が落ちないことを確認
+- [ ] 上記を確認できたら、本 ADR を **Accepted** に書き換える PR を出す
