@@ -14,6 +14,9 @@ docs/
 │   └── 0001-tech-stack.md
 └── roadmap/             ← フェーズ計画と進捗
     └── mvp-4weeks.md
+
+packages/core/           ← 型の実装（@akari/core）
+apps/web/                ← Next.js アプリ（Week 1 着手）
 ```
 
 ## どこから読むか

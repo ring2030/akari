@@ -59,11 +59,24 @@ akari/     ← 施設向け（このリポジトリ）
 | 家族（family） | moments 受信、メッセージ送信、面会予約 |
 | 主治医・往診医（doctor, 限定読取） | 健康関連 moments のみ |
 
+## リポジトリ構成
+
+```
+akari/
+├── apps/web/          ← Next.js + Supabase（Week 1 着手）
+├── packages/core/     ← ドメインモデル・バリデーション（@akari/core）
+├── docs/              ← 仕様・ADR・ロードマップ
+└── AGENTS.md          ← Cursor / AI 開発ルール
+```
+
 ## 開発
 
 ```bash
 npm install
-npm run dev
+npm run lint
+npm run test:run
+npm run build          # @akari/core をビルド
+npm run dev            # @akari/web（Week 1 以降）
 ```
 
 詳しい開発フローは [`CONTRIBUTING.md`](./CONTRIBUTING.md) を参照してください。

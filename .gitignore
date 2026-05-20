@@ -52,9 +52,10 @@ yarn-error.log*
 Thumbs.db
 desktop.ini
 
-# Cursor
-.cursor/
-!.cursor/rules
+# Cursor（ルールだけ共有、それ以外はローカル）
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
 
 # Temp
 tmp/

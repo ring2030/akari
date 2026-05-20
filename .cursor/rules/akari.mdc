@@ -1,0 +1,31 @@
+---
+description: akari プロジェクトの開発原則（尊厳・施設向け・ring-core 語彙禁止）
+alwaysApply: true
+---
+
+# akari 開発ルール（Cursor）
+
+詳細は `AGENTS.md` を参照。ここは毎ターン必ず守る要点だけ。
+
+## 製品
+
+- 高齢者施設向け「暮らしの台所」。中心概念は **moments**（小さな出来事）
+- **コール・緊急度1-5・nurse_admin は使わない**（ring-core 由来 NG）
+
+## 三原則
+
+1. 尊厳ファースト（監視・通報・隠れた録音録画 NG）
+2. 介護士の手数を増やさない（+30秒は要相談）
+3. 家族は「読む人」ではなく「参加する人」
+
+## コード
+
+- ドメイン型・バリデーション → `packages/core`（`@akari/core`）
+- UI・DB → `apps/web`
+- 仕様の正 → `docs/spec/akari-protocol-1.0.md`
+- 型を先に、テストは vitest（純粋関数）
+- コミットはユーザー指示時のみ。main 直 push 禁止
+
+## ロール
+
+`resident` | `caregiver` | `life-counselor` | `facility-admin` | `family` | `doctor`
