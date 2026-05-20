@@ -61,3 +61,8 @@ desktop.ini
 tmp/
 temp/
 .cache/
+
+# Supabase local
+supabase/.branches
+supabase/.temp
+supabase/.env

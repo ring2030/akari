@@ -1,0 +1,106 @@
+:root {
+  --akari-bg: #fffaf5;
+  --akari-surface: #ffffff;
+  --akari-text: #2c2416;
+  --akari-muted: #6b5e4a;
+  --akari-accent: #e8a54b;
+  --akari-accent-soft: #fde8c8;
+  --akari-border: #e8dfd0;
+  --tap-min: 44px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family:
+    "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN",
+    "Noto Sans JP",
+    system-ui,
+    sans-serif;
+  background: var(--akari-bg);
+  color: var(--akari-text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--akari-accent);
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.muted {
+  color: var(--akari-muted);
+  font-size: 0.9rem;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.nav-list a {
+  display: block;
+  padding: 1rem 1.25rem;
+  min-height: var(--tap-min);
+  background: var(--akari-surface);
+  border: 1px solid var(--akari-border);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--akari-text);
+  font-weight: 500;
+}
+
+.nav-list a:hover {
+  background: var(--akari-accent-soft);
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.mood-btn {
+  min-height: 5rem;
+  padding: 1.25rem;
+  font-size: 1.1rem;
+  border: 2px solid var(--akari-border);
+  border-radius: 16px;
+  background: var(--akari-surface);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.mood-btn:hover {
+  border-color: var(--akari-accent);
+  background: var(--akari-accent-soft);
+}
+
+.placeholder-card {
+  background: var(--akari-surface);
+  border: 1px dashed var(--akari-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}

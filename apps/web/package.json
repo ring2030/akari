@@ -2,12 +2,26 @@
   "name": "@akari/web",
   "version": "0.0.1",
   "private": true,
-  "description": "akari web app (Next.js + Supabase) — scaffold pending Week 1",
+  "description": "akari web app — Next.js 14 + Supabase",
   "license": "Apache-2.0",
   "scripts": {
-    "dev": "echo \"@akari/web: Next.js scaffold arrives in Week 1 (see docs/roadmap/mvp-4weeks.md)\" && exit 0"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@akari/core": "*"
+    "@akari/core": "*",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.49.8",
+    "next": "^14.2.29",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.6",
+    "typescript": "^5.8.3"
   }
 }

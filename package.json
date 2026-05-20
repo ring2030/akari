@@ -19,7 +19,7 @@
     "format:fix": "prettier --write .",
     "test": "vitest",
     "test:run": "vitest run",
-    "build": "npm run build -w @akari/core",
+    "build": "npm run build -w @akari/core && npm run build -w @akari/web",
     "dev": "npm run dev -w @akari/web"
   },
   "repository": {

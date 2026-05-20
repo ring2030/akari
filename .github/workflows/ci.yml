@@ -27,8 +27,11 @@ jobs:
       - name: Lint
         run: npm run lint --if-present
 
-      - name: Build @akari/core
-        run: npm run build -w @akari/core
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: http://127.0.0.1:54321
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ci-placeholder-anon-key
 
       - name: Test
         run: npm run test:run
